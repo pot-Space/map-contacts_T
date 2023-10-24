@@ -1,0 +1,296 @@
+/* Start: стили для карты */
+.t-map {
+    min-height: 550px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.a-map {
+    color: #333;
+}
+
+.ymaps-2-1-79-balloon {
+    overflow: hidden;
+    border-radius: 10px !important;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(10%);
+}
+
+/* End: стили для карты */
+
+body {
+    background: #eef2f4;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Стили филиалов */
+
+.branch-item {
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.branch-name {
+    background: #2c4f92;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.branch-name span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.branch-body {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.branch-body span {
+    font-weight: bold;
+}
+
+.branch-body :not(:first-child) {
+    line-height: 30px;
+}
+
+.branch-body :last-child {
+    margin-bottom: 0px !important;
+}
+
+/* Страница филиала */
+.col-revers {
+    flex-wrap: wrap-reverse;
+}
+
+.office-detail {
+    padding: 0 15px 0 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-office {
+    width: 100%;
+    min-height: 250px;
+    background: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.text-detail p,
+.text-detail a {
+    margin-bottom: 8px;
+    color: #343A40;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 1rem;
+}
+
+.text-detail a {
+    font-weight: 400;
+}
+
+.text-detail .structure-link {
+    font-weight: 600;
+    line-height: 50px;
+    color: #343A40;
+    white-space: nowrap;
+}
+
+.text-detail a:hover {
+    color: #2C4F92;
+}
+
+.text-detail div {
+    color: #343A40;
+    line-height: 18px;
+    font-size: 1rem;
+    /* text-align: justify; */
+}
+
+.img-detail {
+    margin: 0 auto;
+    background-color: #2c4f92;
+    background-image: url('/img/structure.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.about-office-header,
+.office-photo-header {
+    line-height: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-office-header:first-child,
+.office-photo-header:first-child {
+    margin: 0 24px;
+    border-bottom: 2px solid #E0E6EC;
+}
+
+.about-office-body p {
+    line-height: 1.4rem;
+}
+
+.about-office-body>p::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+}
+
+.about-office:hover,
+.office-detail:hover,
+.branch-item:hover,
+.t-map:hover,
+.office-photo:hover {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    transition: none;
+}
+
+.office-photo {
+    min-height: 250px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.office-photo-body {
+    padding-left: 1em;
+    height: calc(100% - 48px);
+    overflow: hidden scroll;
+
+    scrollbar-color: #cdcdcd #fff;
+    scrollbar-width: auto;
+}
+
+.photo-img {
+    display: block;
+    height: 200px;
+    background-image: url('/img/office_1.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Альтернатива с img */
+.img-properties {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.office-photo-body::-webkit-scrollbar {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.office-photo-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cdcdcd;
+}
+
+.office-photo-body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Просмотр фото */
+
+.light-box {
+    display: none;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.light-box-close {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    top: 25px;
+    right: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.light-box-content {
+    position: absolute;
+    padding: 12px;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #333;
+    box-shadow: 6px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.arrow {
+    text-align: center;
+    width: 50px;
+    height: 150px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    line-height: 135px;
+    font-weight: bold;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    user-select: none;
+}
+
+.arrow:hover,
+.light-box-close:hover {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    ;
+}
+
+.arrow.prev {
+    left: -35px;
+}
+
+.arrow.next {
+    right: -85px;
+}
+
+.light-box-img {
+    max-width: 1000px;
+    border-radius: 4px;
+}

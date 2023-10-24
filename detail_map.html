@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row col-revers">
+      <div class="col-xl-4 col-12 d-flex mb-4">
+        <div id="office-id" class="office-detail"></div>
+      </div>
+
+      <div class="col-xl-8 col-12 mb-4">
+        <div class="t-map height-auto" id="trasko-map"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-8 col-12 mb-4">
+        <div id="about-office-id" class="about-office">
+          <div class="about-office-header text-center mb-2 p-1">
+            <span>О филиале</span>
+          </div>
+          <div class="about-office-body p-4 pt-2 pb-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit, explicabo similique obcaecati est
+              voluptatum doloribus quia. Sapiente eaque labore officiis sint, at aliquid delectus ad nobis alias ut
+              omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit, explicabo similique obcaecati est
+              voluptatum doloribus quia. Sapiente eaque labore officiis sint, at aliquid delectus ad nobis alias ut
+              omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum alias
+              dolorum eaque fugiat maxime labore sint illo est quasi quam eos totam unde possimus quod maiores a earum,
+              autem quibusdam!
+            </p>
+            <p>Ipsum alias dolorum eaque fugiat maxime labore sint illo est quasi quam eos totam unde possimus quod
+              maiores a earum, autem quibusdam!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-12 mb-4">
+        <div class="office-photo">
+          <div class="office-photo-header text-center mb-2 p-1">
+            <span>Наши фото</span>
+          </div>
+          <div class="office-photo-body text-center row m-0">
+            <div class="col-xl-12 col-6 pb-3">
+              <a class="photo-img" href="#2" data-src="/img/office_0.jpg"> </a>
+            </div>
+            <div class="col-xl-12 col-6 pb-3">
+              <a class="photo-img" href="#2" data-src="/img/office_2.jpg"> </a>
+            </div>
+            <div class="col-xl-12 col-6 pb-3">
+              <a class="photo-img" href="#3" data-src="/img/office_3.jpg"> </a>
+            </div>
+            <div class="col-xl-12 col-6 pb-3">
+              <a class="photo-img" href="#4" data-src="/img/office_4.jpg"> </a>
+            </div>
+            <div class="col-xl-12 col-6 pb-3">
+              <a class="photo-img" href="#5" data-src="/img/office_5.jpg"> </a>
+            </div>
+            <div class="pb-3">
+              <a href="#">Перейти в галерею</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="light-box">
+        <span class="light-box-close">x</span>
+        <div class="light-box-content">
+          <span class="arrow prev">&#60;</span>
+          <img class="light-box-img" src="" />
+          <span class="arrow next">&#62;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=5c414cb0-b076-4c11-89f2-573a5b132d82&lang=ru_RU"></script>
+  <script type="module" src="js/detail_map.js"></script>
+  <script src="js/light_box.js" defer></script>
+</body>
+
+</html>
